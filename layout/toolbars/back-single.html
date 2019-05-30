@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/manifest.js"></script>
+    <script src="/@meod-cli/com.core.js"></script>
+    <script src="/values/color.js"></script>
+    <script src="/values/strings.js"></script>
+    <script src="/values/dimens.js"></script>
+    <script src="/values/icons.js"></script>
+    <script src="/values/"></script>
+    <script src="/values/fonts.js"></script>
+    <title>back sigle toolbar</title>
+    <style>
+        #test{
+            height: 600px;
+            width: 600px;
+            background: black;
+        }
+    </style>
+</head>
+<body onkeypress="tecla(event)">
+<meod-toolbar id="a" md-action md-action-use>
+</meod-toolbar>  
+<script>
+        var keyCode
+        function tecla(e){
+        if(window.event)keyCode=window.event.keyCode;
+        else if(e) keyCode=e.which;
+        alert(keyCode)
+        }
+        </script>
+        </head>
+</body>
+</html>

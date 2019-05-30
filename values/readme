@@ -1,0 +1,10 @@
+Meod quiere utilizar valiables globales por lo tanto usted tien que utilizar variables globales 
+para js aqui en la carpeta de values para interactuar con js y el otro archivo _Materiasl.scss 
+es para trabjar mas comodo con css
+
+#############################################
+#   NO CAMBIE LAS VARIABLES DE TIPO OBJETO  #
+#   QUE TIENE POR DEFECTO MEOD              #
+#   SOLO CAMBIE SUS VALORES CON LAS MEDIDAS #
+#   QUE RECOMIENDA MEOD!!!                  #
+#############################################

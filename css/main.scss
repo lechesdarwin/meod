@@ -1,0 +1,39 @@
+@import "components/aside","_material","components/switch","components/button-float","components/input";
+*,*::before,*::after{padding: 0;margin: 0;border: 0;box-sizing: border-box;}
+p,h1,h2,h3,h4,h5,h6,span{margin-block-start: 0;margin-block-end: 0;margin-inline-start: 0;margin-inline-end: 0;font-family: karla;}
+.clearfix {overflow: auto;}
+.clearfix::after{content: "";clear: both;display: table;}
+@font-face {
+font-family: karla;
+src: url(https://fonts.googleapis.com/css?family=Roboto)
+}
+.meod-tabs {
+width: 100%;
+position: fixed;
+/*bottom: 0;*/
+overflow-x:auto;
+overflow-y: hidden;
+white-space: nowrap;
+height: 60px;          
+display: flex;
+justify-content: center;
+}
+meod-tab{
+justify-content:center ;
+width: 50px;
+height: 50px;
+margin-left: 1.5%;}
+meod-tab img{
+width: 40px;
+height: 40px;
+text-align: center;
+margin-left:5px;
+margin-top:5px;
+}
+.meod-tabs meod-tab:hover{
+/*Tines que colocar un color mas debil del color deacentuacion.*/
+background: rgb(245, 208, 252);
+}
+.meod-tabs meod-tab img:hover{
+width: 45px;
+}

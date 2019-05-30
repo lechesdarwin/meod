@@ -1,0 +1,26 @@
+.button-float{
+    position: absolute;
+    right: 34px;
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background:$accent-color;
+    margin-bottom: 80px;
+    transition: background 2s,width 2s,height 2s,padding 2.8s;
+
+}
+.button-float:active{
+    background-image: radial-gradient(#E040FB, rgb(241, 177, 252), rgb(195, 162, 201));
+    width: 95px;
+    height: 95px;
+    padding: 10px;
+}
+.button-float #img-float{
+    /*margin: 50em 50em;*/
+    position: fixed;
+    padding: 8px;
+    width: 80px;
+    height: 80px;
+    
+}

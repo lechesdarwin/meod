@@ -1,0 +1,18 @@
+MANUAL MEOD V.0.8.9
+**Aside se obtine con unas clase css en el dos div
+@abrir el principal (meod-lateral)->classcss
+    |_@hijo para empezar a trabajar en el (main-lateral)->classcss
+         |_@la parte principal del aside @meod ya tiene un componente abierto para eso <meod-aside-main (md-content)->"En esta va el contenido html para escribir en el espacio reservado para tu contenido"> y utiliza md-cr-img -> para tu img que quieres poner al lado derecho REQUERIDO que la etiqueta tenga el id="main-aside"
+@para crear subdiviones de meod-aside
+   |_<div class="divisor-main">
+                <img src="/mipmap/add-add.png" alt="">
+                    <div class="conten-divisor-main">
+                        <div class="content">
+                            <h1>aeasdcgjkds</h1>
+                        </div>
+                    </div>
+                    <meod-switch></meod-switch>
+            </div>
+@atributos
+    |_@md-cr-img="(>URL !Texto alternativo  @Título de la imagen)"
+    |_@md-id="" ->este atributp esta trabajando bien por el momento en el componente <meod-tab>

@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/*
+Aqui usted tiene que colocar  las variables que utilizara en todo su sitio web
+principalmente las variables de material desing que meod ya tiene por defecto
+si es que usted no tiene ni puta idea que es eso l@ invito a visitar el siguiente sitio web
+para que se ayude => https://www.materialpalette.com/
+*/
+.main-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #512DA8;
+}
+
+.main-aside img.main-aside-img {
+  width: 60px;
+  height: 60px;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.main-aside .content {
+  margin: 3% 0%  6%;
+  /*background: rgba(187, 86, 86, 0.664);*/
+  width: 20em;
+  height: 60px;
+}
+
+/*stilos del divisor de menus/status*/
+.divisor-main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(120, 100, 167, 0.623);
+}
+
+.divisor-main img {
+  width: 46px;
+  height: 46px;
+}
+
+.divisor-main .content {
+  /* width: 10em;*/
+  height: 50px;
+}
+
+.divisor-line {
+  height: 8px;
+  background: #BDBDBD;
+}
+
+/*Fin estilos del divisor de menus/status*/
+.meod-lateral {
+  display: none;
+  position: fixed;
+  left: 0;
+  background: #D1C4E9;
+  z-index: 1000;
+  -webkit-transition: width 4s;
+  transition: width 4s;
+}
+
+/*body {
+width: 100%;
+height: 100%;
+background: blanchedalmond;
+}*/
+meod-toolbar:hover + .meod-lateral {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(179, 86, 86, 0.123);
+}
+
+.main-lateral {
+  width: 30%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 425px) {
+  .main-lateral {
+    background: #e68c06;
+    width: 250px;
+    height: 100vh;
+  }
+}
+
+/*
+Aqui usted tiene que colocar  las variables que utilizara en todo su sitio web
+principalmente las variables de material desing que meod ya tiene por defecto
+si es que usted no tiene ni puta idea que es eso l@ invito a visitar el siguiente sitio web
+para que se ayude => https://www.materialpalette.com/
+*/
+/*Esta versin del interruptor esta en css*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.button-float {
+  position: absolute;
+  right: 34px;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #E040FB;
+  margin-bottom: 80px;
+  -webkit-transition: background 2s,width 2s,height 2s,padding 2.8s;
+  transition: background 2s,width 2s,height 2s,padding 2.8s;
+}
+
+.button-float:active {
+  background-image: radial-gradient(#E040FB, #f1b1fc, #c3a2c9);
+  width: 95px;
+  height: 95px;
+  padding: 10px;
+}
+
+.button-float #img-float {
+  /*margin: 50em 50em;*/
+  position: fixed;
+  padding: 8px;
+  width: 80px;
+  height: 80px;
+}
+
+.android {
+  height: 60px;
+  width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-hint {
+  border: 0;
+  width: 40%;
+  height: 40px;
+}
+
+.input-hint:focus {
+  padding: 0px;
+  -webkit-box-shadow: 1px 1px 0px #9197bd, 2px 2px 0px #9197bd, 3px 3px 0px #9197bd, 4px 4px 0px #9197bd, 5px 5px 0px #9197bd, 6px 6px 0px #9197bd, 7px 7px 0px #9197bd;
+          box-shadow: 1px 1px 0px #9197bd, 2px 2px 0px #9197bd, 3px 3px 0px #9197bd, 4px 4px 0px #9197bd, 5px 5px 0px #9197bd, 6px 6px 0px #9197bd, 7px 7px 0px #9197bd;
+  /* A más sombras más profundidad */
+  outline-style: none;
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  font-family: karla;
+}
+
+.input-hint {
+  margin-top: 1.3em;
+}
+
+.input-hint + label {
+  -webkit-transition: margin-top 1s ,font-size 1s,-webkit-transform 2s;
+  transition: margin-top 1s ,font-size 1s,-webkit-transform 2s;
+  transition: margin-top 1s ,font-size 1s,transform 2s;
+  transition: margin-top 1s ,font-size 1s,transform 2s ,-webkit-transform 2s;
+}
+
+.input-hint:focus + label {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.input-hint:focus {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+}
+
+.android > .input-hint {
+  float: left;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  font-family: karla;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@font-face {
+  font-family: karla;
+  src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+
+.meod-tabs {
+  width: 100%;
+  position: fixed;
+  /*bottom: 0;*/
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+meod-tab {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 1.5%;
+}
+
+meod-tab img {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.meod-tabs meod-tab:hover {
+  /*Tines que colocar un color mas debil del color deacentuacion.*/
+  background: #f5d0fc;
+}
+
+.meod-tabs meod-tab img:hover {
+  width: 45px;
+}
+/*# sourceMappingURL=main.css.map */

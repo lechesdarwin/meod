@@ -1,0 +1,72 @@
+@import "../material";
+.main-aside{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: $dark-primary-color;
+    img.main-aside-img{
+        width: 60px;
+        height: 60px;
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+    .content{
+        margin: 3% 0%  6%;
+        /*background: rgba(187, 86, 86, 0.664);*/
+        width: 20em;
+        height: 60px;
+    }
+}
+
+/*stilos del divisor de menus/status*/
+.divisor-main{
+    box-sizing: border-box;
+    display: flex;
+    background:rgba(120, 100, 167, 0.623);
+    img{
+        width: 46px;
+        height: 46px;
+    }
+    .content{
+       /* width: 10em;*/
+        height: 50px;
+    }
+}
+.divisor-line{
+    height: $divider-heigth;
+    background:$divider-color;
+  }
+  
+/*Fin estilos del divisor de menus/status*/
+.meod-lateral{
+    display: none;
+    position: fixed;
+    left: 0;
+    background:$background-color;
+    z-index: 1000;
+    transition: width 4s;
+}
+/*body {
+width: 100%;
+height: 100%;
+background: blanchedalmond;
+}*/
+meod-toolbar:hover+.meod-lateral{
+display: block;
+width: 100%;
+height: 100%;
+background: rgba(179, 86, 86, 0.123)
+}
+.main-lateral{
+width: 30%;
+height: 100vh;
+overflow-y:scroll;
+overflow-x: hidden; 
+}
+@media only screen and (max-width: 425px){
+.main-lateral{
+    background: rgb(230, 140, 6);
+    width: 250px;
+    height: 100vh;
+}
+}
